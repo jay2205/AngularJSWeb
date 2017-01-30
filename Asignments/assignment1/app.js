@@ -8,12 +8,12 @@
   function LunchCheckController($scope){
     $scope.checkItems = function(){
       if ($scope.lunchItems == null || $scope.lunchItems == "") {
-        $scope.message = "Please enter Data";
+        $scope.message = "Please enter Data first";
       } else {
         var itemsArray =  $scope.lunchItems.split(",");
         var itemCount = itemsArray.length;
           if (itemsArray.length < 4){
-            $scope.message = "Enjoy";
+            $scope.message = "Enjoy!";
           } else {
             $scope.message = "Too much!";
           }
